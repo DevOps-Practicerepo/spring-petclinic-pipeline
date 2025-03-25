@@ -1,7 +1,7 @@
 pool: Default
 
 pr: 
-  - develop
+  - main
 
 variables:
   dockerImagerepo: 'venkeyboda/spc'
