@@ -7,6 +7,8 @@ variables:
   dockerImagerepo: 'venkeyboda/spc'
   dockerImagetag:  '$(Build.BuildId)' 
 
+# build and push docker image with using CI
+
 stages:
   - stage: CI
     jobs:
@@ -71,6 +73,8 @@ stages:
             repository: $(dockerImagerepo)
             tags: |
               $(dockerImagetag)     
+
+# Continuos deployment
 
   - stage: CD
     jobs:
